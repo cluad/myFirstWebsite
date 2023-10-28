@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.9 lianxi3</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      }*/
+      .whiteshadow {
+        background-color: white;
+        box-shadow: -moz-box-shadow:2px 2px 5px #333333; -webkit-box-shadow:2px 2px 5px #333333; box-shadow:2px 2px 5px #333333;;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flex3 {
+        flex: 3;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .guiding {
+        padding: 10px 20px;
+        border-bottom: 1px solid black;
+        font-size: 22px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--left zoon-->
+    <div style="width: 200px" class="flex column whiteshadow">
+      <!--logo-->
+      <div
+        style="
+          height: 100px;
+          border-bottom: 1px solid black;
+          align-items: center;
+          justify-content: center;
+        "
+        class="flex"
+      >
+        <img src="https://kangwenchang.com/logo.png" height="50px" alt="" />
+        <div style="margin-left: 10px">康文昌</div>
+      </div>
+      <!--guiding zoon-->
+      <div class="flex column">
+        <div class="guiding">guiding</div>
+        <div class="guiding">guiding</div>
+      </div>
+    </div>
+    <!--right zoon-->
+    <div class="flex flex1 column">
+      <!--top zoon-->
+      <div style="height: 100px; z-index: 1" class="whiteshadow"></div>
+      <!--main zoon-->
+      <div style="overflow: auto" class="flex flex1">
+        <!--left-->
+        <div class="flex flex3 column mg8">
+          <!--data zoon-->
+          <div style="height: 150px" class="flex">
+            <!--data-->
+            <div class="flex1 whiteshadow mgr8"></div>
+            <div class="flex1 whiteshadow mgr8"></div>
+            <div class="flex1 whiteshadow mgr8"></div>
+            <div class="flex1 whiteshadow"></div>
+          </div>
+          <!--xiangmu-->
+          <div class="flex flex1 column">
+            <!--xiangmu-->
+            <div style="height: 150px" class="whiteshadow mgt8"></div>
+            <div style="height: 150px" class="whiteshadow mgt8"></div>
+            <div style="height: 150px" class="whiteshadow mgt8"></div>
+          </div>
+        </div>
+        <!--right-->
+        <div class="flex flex1 column mgt8 mgr8">
+          <!--top-->
+          <div style="height: 200px" class="whiteshadow"></div>
+          <!--2rd-->
+          <div style="height: 300px" class="whiteshadow mgt8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
